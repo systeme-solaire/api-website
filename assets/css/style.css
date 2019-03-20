@@ -1,6 +1,6 @@
 html,
 body {
-     font-size: 16px;
+    font-size: 16px;
     color: #797979;
     width: 100%;
     padding: 0;
@@ -8,8 +8,12 @@ body {
     margin-right: 0;
     font-weight: 400;
     width:100%;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-
+@font-face {
+    font-family: "Open Sans";
+    src: url(fonts/OpenSans-Regular.ttf);
+  }
 /*------------------------------------------------------------------*/
 /*   IE10 in Windows 8 and Windows Phone 8 Bug fix
 /*-----------------------------------------------------------------*/
