@@ -138,6 +138,12 @@
                             <div class="reviews_content">
                                 <div class="col-md-6">
                                     <div class="reviews_item m-top-40">
+                                        <h3>27/03/2019 - v1.2.0 La masse</h3>
+                                        <p>Ajout de la masse des astres.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="reviews_item m-top-40">
                                         <h3>12/03/2019 - Un site web</h3>
                                         <p>Developpement de ce site web pour accompagner l'API.</p>
                                     </div>
@@ -288,8 +294,8 @@
                                               <tr>
                                                 <th scope="row">4</th>
                                                 <td>moons</td>
-                                                <td>array</td>
-                                                <td colspan="2">Tableau avec tous les satellites.</td>
+                                                <td>array <br>[{string, string}, ...]</td>
+                                                <td colspan="2">Tableau avec tous les satellites.<br>moon : nom du satellite, rel : adresse de l'API pour le satellite.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">5</th>
@@ -305,24 +311,30 @@
                                               </tr>
                                               <tr>
                                                 <th scope="row">7</th>
-                                                <td>aroundPlanet</td>
-                                                <td>object</td>
-                                                <td colspan="2">Pour un satellite, la planète autour de laquelle orbite l'astre.</td>
+                                                <td>mass</td>
+                                                <td>object<br>{number, integer}</td>
+                                                <td colspan="2">Masse de l'objet en 10<sup>n</sup> kg.<br>massValue : masse de l'astre, massExponent : exposant 10 de la masse.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">8</th>
+                                                <td>aroundPlanet</td>
+                                                <td>object<br>{string, string}</td>
+                                                <td colspan="2">Pour un satellite, la planète autour de laquelle orbite l'astre.<br>planet : nom de la planète, rel : adresse de l'API pour la planète.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">9</th>
                                                 <td>discoveredBy</td>
                                                 <td>string</td>
                                                 <td colspan="2">Nom du découvreur de l'astre.</td>
                                               </tr>
                                               <tr>
-                                                <th scope="row">9</th>
+                                                <th scope="row">10</th>
                                                 <td>discoveryDate</td>
                                                 <td>string</td>
                                                 <td colspan="2">Date de découverte de l'astre</td>
                                               </tr>
                                               <tr>
-                                                <th scope="row">10</th>
+                                                <th scope="row">11</th>
                                                 <td>alternativeName</td>
                                                 <td>string</td>
                                                 <td colspan="2">Désignation temporaire.</td>
