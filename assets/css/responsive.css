@@ -1,5 +1,8 @@
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
+    .realeasenote{
+        min-height:130px;
+    }
     body {
         font-size: 1rem;
     }
@@ -11,6 +14,9 @@
 }
 /* Portrait tablets and small desktops */
 @media (max-width: 991px) {
+    .realeasenote{
+        min-height:10px;
+    }
     .syssollink{
         padding-top: 16px;
         margin-left: -15px;
