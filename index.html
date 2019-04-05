@@ -277,7 +277,7 @@
                                                 <th scope="row">1</th>
                                                 <td>id</td>
                                                 <td>string</td>
-                                                <td colspan="2">Id de l'astre.</td>
+                                                <td colspan="2">Identifiant de l'astre dans l'API.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">2</th>
@@ -286,61 +286,145 @@
                                                 <td colspan="2">Nom de l'astre.</td>
                                               </tr>
                                               <tr>
-                                                <th scope="row">2</th>
+                                                <th scope="row">3</th>
                                                 <td>englishName</td>
                                                 <td>string</td>
                                                 <td colspan="2">Nom anglais de l'astre.</td>
                                               </tr>
                                               <tr>
-                                                <th scope="row">3</th>
+                                                <th scope="row">4</th>
                                                 <td>isPlanet</td>
                                                 <td>boolean</td>
                                                 <td colspan="2">Est-ce une planète?</td>
                                               </tr>
                                               <tr>
-                                                <th scope="row">4</th>
+                                                <th scope="row">5</th>
                                                 <td>moons<br>[{moon, rel}, ...]</td>
                                                 <td>array<br>[{string, string}, ...]</td>
                                                 <td colspan="2">Tableau avec tous les satellites.<br>moon : nom du satellite, rel : adresse de l'API pour le satellite.</td>
                                               </tr>
                                               <tr>
-                                                <th scope="row">5</th>
+                                                <th scope="row">6</th>
                                                 <td>semimajorAxis</td>
                                                 <td>integer</td>
-                                                <td colspan="2">Le demi grand axe.</td>
+                                                <td colspan="2">Le demi grand axe en kilomètres.</td>
                                               </tr>
                                               <tr>
-                                                <th scope="row">6</th>
+                                                <th scope="row">7</th>
+                                                <td>perihelion</td>
+                                                <td>integer</td>
+                                                <td colspan="2">Le périhélie en kilomètres.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">8</th>
+                                                <td>apheion</td>
+                                                <td>integer</td>
+                                                <td colspan="2">L'aphélie en kilomètres.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">9</th>
                                                 <td>eccentricity</td>
                                                 <td>decimal</td>
                                                 <td colspan="2">L'excentricité orbitale.</td>
                                               </tr>
                                               <tr>
-                                                <th scope="row">7</th>
-                                                <td>mass<br>{massValue, massExponent}</td>
-                                                <td>object<br>{number, integer}</td>
-                                                <td colspan="2">Masse de l'objet en 10<sup>n</sup> kg.<br>massValue : masse de l'astre, massExponent : exposant 10 de la masse.</td>
+                                                <th scope="row">10</th>
+                                                <td>inclination</td>
+                                                <td>decimal</td>
+                                                <td colspan="2">L'inclinaison orbitale en degrés.</td>
                                               </tr>
                                               <tr>
-                                                <th scope="row">8</th>
+                                                <th scope="row">11</th>
+                                                <td>mass<br>{massValue, massExponent}</td>
+                                                <td>object<br>{number, integer}</td>
+                                                <td colspan="2">La masse de l'objet en 10<sup>n</sup> kg.<br>massValue : masse de l'astre, massExponent : exposant 10 de la masse.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">12</th>
+                                                <td>vol<br>{volValue, volExponent}</td>
+                                                <td>object<br>{number, integer}</td>
+                                                <td colspan="2">Le Volume de l'objet en 10<sup>n</sup> kg.<br>volValue : volume de l'astre, volExponent : exposant 10 du volume.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">13</th>
+                                                <td>density</td>
+                                                <td>decimal</td>
+                                                <td colspan="2">La dentité de l'astre en g.cm<sup>3</sup>.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">14</th>
+                                                <td>gravity</td>
+                                                <td>decimal</td>
+                                                <td colspan="2">La gravité de surface en m.s<sup>-2</sup>.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">15</th>
+                                                <td>escape</td>
+                                                <td>decimal</td>
+                                                <td colspan="2">La vitesse d'échappement en m.s<sup>-1</sup>.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">16</th>
+                                                <td>meanRadius</td>
+                                                <td>integer</td>
+                                                <td colspan="2">Le rayon moyen en kilomètres.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">17</th>
+                                                <td>equaRadius</td>
+                                                <td>integer</td>
+                                                <td colspan="2">Le rayon équatorial en kilomètres.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">18</th>
+                                                <td>polarRadius</td>
+                                                <td>integer</td>
+                                                <td colspan="2">Le rayon polaire en kilomètres.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">19</th>
+                                                <td>escape</td>
+                                                <td>flattening</td>
+                                                <td colspan="2">L'aplatissement.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">20</th>
+                                                <td>dimension</td>
+                                                <td>string</td>
+                                                <td colspan="2">Dimension de l'astre en kilomètres sur 3 axes X, Y et Z pour les astres non sphériques.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">21</th>
+                                                <td>sideralOrbit</td>
+                                                <td>decimal</td>
+                                                <td colspan="2">La période le révolution de l'astre autour d'un autre astre (le Soleil ou une planète) en jours terrestres.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">22</th>
+                                                <td>sideralRotation</td>
+                                                <td>decimal</td>
+                                                <td colspan="2">La période de rotation de l'astre, le temps nécessaire pour astre pour réaliser un tour sur lui même, en heure.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">23</th>
                                                 <td>aroundPlanet<br>{planet, rel}</td>
                                                 <td>object<br>{string, string}</td>
                                                 <td colspan="2">Pour un satellite, la planète autour de laquelle orbite l'astre.<br>planet : nom de la planète, rel : adresse de l'API pour la planète.</td>
                                               </tr>
                                               <tr>
-                                                <th scope="row">9</th>
+                                                <th scope="row">24</th>
                                                 <td>discoveredBy</td>
                                                 <td>string</td>
                                                 <td colspan="2">Nom du découvreur de l'astre.</td>
                                               </tr>
                                               <tr>
-                                                <th scope="row">10</th>
+                                                <th scope="row">25</th>
                                                 <td>discoveryDate</td>
                                                 <td>string</td>
                                                 <td colspan="2">Date de découverte de l'astre</td>
                                               </tr>
                                               <tr>
-                                                <th scope="row">11</th>
+                                                <th scope="row">26</th>
                                                 <td>alternativeName</td>
                                                 <td>string</td>
                                                 <td colspan="2">Désignation temporaire.</td>
