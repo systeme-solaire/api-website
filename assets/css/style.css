@@ -27,7 +27,9 @@ body {
 /*
     Page Content
 ------------------------------------------*/
-
+.realeasenote{
+    min-height:190px;
+}
 .page-content, 
 section { overflow: hidden; }
 
