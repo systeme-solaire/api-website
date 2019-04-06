@@ -3,15 +3,15 @@
     <head>
         <meta charset="utf-8">
         <title>Solar system OpenData</title>
-        <meta name="description" content="Une API Rest ouverte avec toutes les doonées du Système solaire">
+        <meta name="description" content="Une API Rest ouverte avec toutes les données du Système solaire">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" href="favicon.ico">
 
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/bootsnav.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/responsive.css" />
+        <link rel="stylesheet" href="assets/css/bootsnav.min.css">
+        <link rel="stylesheet" href="assets/css/style.min.css">
+        <link rel="stylesheet" href="assets/css/responsive.min.css" />
     </head>
 
     <body>
@@ -222,37 +222,37 @@
                                               <tr>
                                                 <th scope="row">1</th>
                                                 <td>datas</td>
-                                                <td colspan="2">Permet de limiter les données renvoyées (séparé par une virgule).<br> Exemple : <code>datas=id,semimajorAxis,isPlanet</code></td>
+                                                <td>Permet de limiter les données renvoyées (séparé par une virgule).<br> Exemple : <code>datas=id,semimajorAxis,isPlanet</code></td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">2</th>
                                                 <td>exclude</td>
-                                                <td colspan="2">Permet d'exclure certaines données (séparé par une virgule).<br> Exemple : <code>exclude=id,isPlanet</code></td>
+                                                <td>Permet d'exclure certaines données (séparé par une virgule).<br> Exemple : <code>exclude=id,isPlanet</code></td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">2</th>
                                                 <td>order</td>
-                                                <td colspan="2">Permet de trier le résultat.<br> Exemple : <code>order=semimajorAxis,asc</code><br>NB : Un seul paramètre de tri autorisé.</td>
+                                                <td>Permet de trier le résultat.<br> Exemple : <code>order=semimajorAxis,asc</code><br>NB : Un seul paramètre de tri autorisé.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">3</th>
                                                 <td>page</td>
-                                                <td colspan="2">Permet de paginer le résultat d'une requête triée. Il faut préciser le numéro de page (numéro>=1) et la taille des page (taille>=1 and 20 par défaut).<br> Exemple : <code>page=1,10</code><br>NB : Vous ne pouvez pas utiliser “page” sans le paramètre "order".</td>
+                                                <td>Permet de paginer le résultat d'une requête triée. Il faut préciser le numéro de page (numéro>=1) et la taille des page (taille>=1 and 20 par défaut).<br> Exemple : <code>page=1,10</code><br>NB : Vous ne pouvez pas utiliser “page” sans le paramètre "order".</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">4</th>
                                                 <td>brutData</td>
-                                                <td colspan="2">Permet de transformer les objets en enregistrement.<br>Exemple : <code>brutData=true</code><br>NB : Cette action peut être faite en JavaScript coté client!<br>NB : Valeur par défaut est false.</td>
+                                                <td>Permet de transformer les objets en enregistrement.<br>Exemple : <code>brutData=true</code><br>NB : Cette action peut être faite en JavaScript coté client!<br>NB : Valeur par défaut est false.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">5</th>
                                                 <td>filter[]</td>
-                                                <td colspan="2">Permet de filtrer le résultat. Chaque filtre est composé d'une donnée, un opérateur et une valeur (séparé par une virgule).<br>Exemple : <code>filter[]=id,eq,mars</code><br>Les opérateurs acceptés sont : <ul id="operator"><li>cs (like)</li><li>sw (start with)</li><li>ew (end with)</li><li>eq (equal)</li><li>lt (less than)</li><li>le (less or equal than)</li><li>ge (greater or equal than)</li><li>gt (greater than)</li><li>bt (between)</li></ul>Tous opérateurs inverses existent : ncs - nsw - new - neq - nlt - nle - nge - ngt - nbt.<br> NB : Si un filtre est invalide il sera ignoré.</td>
+                                                <td>Permet de filtrer le résultat. Chaque filtre est composé d'une donnée, un opérateur et une valeur (séparé par une virgule).<br>Exemple : <code>filter[]=id,eq,mars</code><br>Les opérateurs acceptés sont : <ul id="operator"><li>cs (like)</li><li>sw (start with)</li><li>ew (end with)</li><li>eq (equal)</li><li>lt (less than)</li><li>le (less or equal than)</li><li>ge (greater or equal than)</li><li>gt (greater than)</li><li>bt (between)</li></ul>Tous opérateurs inverses existent : ncs - nsw - new - neq - nlt - nle - nge - ngt - nbt.<br> NB : Si un filtre est invalide il sera ignoré.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">6</th>
                                                 <td>satisfy</td>
-                                                <td colspan="2">Permet de forcer si tous les filtres s'appliquent (choix par défaut) ou juste certains.<br>Exemple : <code>satisfy=any</code><br>NB : la seule valeur possible est any</td>
+                                                <td>Permet de forcer si tous les filtres s'appliquent (choix par défaut) ou juste certains.<br>Exemple : <code>satisfy=any</code><br>NB : la seule valeur possible est any</td>
                                               </tr>
                                             </tbody>
                                           </table>
@@ -267,8 +267,8 @@
                                             <thead>
                                               <tr>
                                                 <th scope="col">#</th>
-                                                <th scope="col">Nom</th>
-                                                <th scope="col">Type</th>
+                                                <th scope="col" class="colName">Nom</th>
+                                                <th scope="col" class="colType">Type</th>
                                                 <th scope="col">Contenu</th>
                                               </tr>
                                             </thead>
@@ -277,157 +277,157 @@
                                                 <th scope="row">1</th>
                                                 <td>id</td>
                                                 <td>string</td>
-                                                <td colspan="2">Identifiant de l'astre dans l'API.</td>
+                                                <td>Identifiant de l'astre dans l'API.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">2</th>
                                                 <td>name</td>
                                                 <td>string</td>
-                                                <td colspan="2">Nom de l'astre.</td>
+                                                <td>Nom de l'astre.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">3</th>
                                                 <td>englishName</td>
                                                 <td>string</td>
-                                                <td colspan="2">Nom anglais de l'astre.</td>
+                                                <td>Nom anglais de l'astre.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">4</th>
                                                 <td>isPlanet</td>
                                                 <td>boolean</td>
-                                                <td colspan="2">Est-ce une planète?</td>
+                                                <td>Est-ce une planète?</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">5</th>
                                                 <td>moons<br>[{moon, rel}, ...]</td>
                                                 <td>array<br>[{string, string}, ...]</td>
-                                                <td colspan="2">Tableau avec tous les satellites.<br>moon : nom du satellite, rel : adresse de l'API pour le satellite.</td>
+                                                <td>Tableau avec tous les satellites.<br>moon : nom du satellite, rel : adresse de l'API pour le satellite.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">6</th>
                                                 <td>semimajorAxis</td>
                                                 <td>integer</td>
-                                                <td colspan="2">Le demi grand axe en kilomètres.</td>
+                                                <td>Le demi grand axe en kilomètres.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">7</th>
                                                 <td>perihelion</td>
                                                 <td>integer</td>
-                                                <td colspan="2">Le périhélie en kilomètres.</td>
+                                                <td>Le périhélie en kilomètres.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">8</th>
                                                 <td>apheion</td>
                                                 <td>integer</td>
-                                                <td colspan="2">L'aphélie en kilomètres.</td>
+                                                <td>L'aphélie en kilomètres.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">9</th>
                                                 <td>eccentricity</td>
                                                 <td>decimal</td>
-                                                <td colspan="2">L'excentricité orbitale.</td>
+                                                <td>L'excentricité orbitale.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">10</th>
                                                 <td>inclination</td>
                                                 <td>decimal</td>
-                                                <td colspan="2">L'inclinaison orbitale en degrés.</td>
+                                                <td>L'inclinaison orbitale en degrés.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">11</th>
                                                 <td>mass<br>{massValue, massExponent}</td>
                                                 <td>object<br>{number, integer}</td>
-                                                <td colspan="2">La masse de l'objet en 10<sup>n</sup> kg.<br>massValue : masse de l'astre, massExponent : exposant 10 de la masse.</td>
+                                                <td>La masse de l'objet en 10<sup>n</sup> kg.<br>massValue : masse de l'astre, massExponent : exposant 10 de la masse.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">12</th>
                                                 <td>vol<br>{volValue, volExponent}</td>
                                                 <td>object<br>{number, integer}</td>
-                                                <td colspan="2">Le Volume de l'objet en 10<sup>n</sup> kg.<br>volValue : volume de l'astre, volExponent : exposant 10 du volume.</td>
+                                                <td>Le Volume de l'objet en 10<sup>n</sup> kg.<br>volValue : volume de l'astre, volExponent : exposant 10 du volume.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">13</th>
                                                 <td>density</td>
                                                 <td>decimal</td>
-                                                <td colspan="2">La dentité de l'astre en g.cm<sup>3</sup>.</td>
+                                                <td>La dentité de l'astre en g.cm<sup>3</sup>.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">14</th>
                                                 <td>gravity</td>
                                                 <td>decimal</td>
-                                                <td colspan="2">La gravité de surface en m.s<sup>-2</sup>.</td>
+                                                <td>La gravité de surface en m.s<sup>-2</sup>.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">15</th>
                                                 <td>escape</td>
                                                 <td>decimal</td>
-                                                <td colspan="2">La vitesse d'échappement en m.s<sup>-1</sup>.</td>
+                                                <td>La vitesse d'échappement en m.s<sup>-1</sup>.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">16</th>
                                                 <td>meanRadius</td>
                                                 <td>integer</td>
-                                                <td colspan="2">Le rayon moyen en kilomètres.</td>
+                                                <td>Le rayon moyen en kilomètres.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">17</th>
                                                 <td>equaRadius</td>
                                                 <td>integer</td>
-                                                <td colspan="2">Le rayon équatorial en kilomètres.</td>
+                                                <td>Le rayon équatorial en kilomètres.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">18</th>
                                                 <td>polarRadius</td>
                                                 <td>integer</td>
-                                                <td colspan="2">Le rayon polaire en kilomètres.</td>
+                                                <td>Le rayon polaire en kilomètres.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">19</th>
                                                 <td>escape</td>
                                                 <td>flattening</td>
-                                                <td colspan="2">L'aplatissement.</td>
+                                                <td>L'aplatissement.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">20</th>
                                                 <td>dimension</td>
                                                 <td>string</td>
-                                                <td colspan="2">Dimension de l'astre en kilomètres sur 3 axes X, Y et Z pour les astres non sphériques.</td>
+                                                <td>Dimension de l'astre en kilomètres sur 3 axes X, Y et Z pour les astres non sphériques.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">21</th>
                                                 <td>sideralOrbit</td>
                                                 <td>decimal</td>
-                                                <td colspan="2">La période le révolution de l'astre autour d'un autre astre (le Soleil ou une planète) en jours terrestres.</td>
+                                                <td>La période le révolution de l'astre autour d'un autre astre (le Soleil ou une planète) en jours terrestres.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">22</th>
                                                 <td>sideralRotation</td>
                                                 <td>decimal</td>
-                                                <td colspan="2">La période de rotation de l'astre, le temps nécessaire pour astre pour réaliser un tour sur lui même, en heure.</td>
+                                                <td>La période de rotation de l'astre, le temps nécessaire pour astre pour réaliser un tour sur lui même, en heure.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">23</th>
                                                 <td>aroundPlanet<br>{planet, rel}</td>
                                                 <td>object<br>{string, string}</td>
-                                                <td colspan="2">Pour un satellite, la planète autour de laquelle orbite l'astre.<br>planet : nom de la planète, rel : adresse de l'API pour la planète.</td>
+                                                <td>Pour un satellite, la planète autour de laquelle orbite l'astre.<br>planet : nom de la planète, rel : adresse de l'API pour la planète.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">24</th>
                                                 <td>discoveredBy</td>
                                                 <td>string</td>
-                                                <td colspan="2">Nom du découvreur de l'astre.</td>
+                                                <td>Nom du découvreur de l'astre.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">25</th>
                                                 <td>discoveryDate</td>
                                                 <td>string</td>
-                                                <td colspan="2">Date de découverte de l'astre</td>
+                                                <td>Date de découverte de l'astre</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">26</th>
                                                 <td>alternativeName</td>
                                                 <td>string</td>
-                                                <td colspan="2">Désignation temporaire.</td>
+                                                <td>Désignation temporaire.</td>
                                               </tr>
                                             </tbody>
                                           </table>

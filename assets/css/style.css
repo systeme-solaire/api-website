@@ -27,6 +27,12 @@ body {
 /*
     Page Content
 ------------------------------------------*/
+.colName{
+    min-width: 230px;
+}
+.colType{
+    min-width: 160px;
+}
 .realeasenote{
     min-height:190px;
 }

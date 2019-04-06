@@ -17,6 +17,12 @@
     .realeasenote{
         min-height:10px;
     }
+    .colName{
+        min-width: 10px;
+        }
+    .colType{
+        min-width: 10px;
+    }
     .syssollink{
         padding-top: 16px;
         margin-left: -15px;
