@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Solar system OpenData</title>
-        <meta name="description" content="An open Rest API with all Solar System data">
+        <meta name="description" content="An open Rest API for querying all Solar System data">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/png" href="../favicon.ico">
         <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
@@ -84,14 +84,14 @@
                             <div class="col-md-8 col-md-offset-2 col-sm-12">
                                 <div class="head_title text-center">
                                     <h2>Features</h2>
-                                    <h5>All what you need</h5>
+                                    <h5>Everything you need</h5>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="features_item sm-m-top-30">
                                     <div class="f_item_text">
                                         <h3>Main bodies</h3>
-                                        <p>All planets and their moons, all dwarfs planets ans some mains asteroids.</p>
+                                        <p>All planets and their moons, all dwarfs planets and the main asteroids.</p>
                                     </div>
                                 </div>
                             </div>
@@ -99,7 +99,7 @@
                                 <div class="features_item sm-m-top-30">
                                     <div class="f_item_text">
                                         <h3>Physical characteristics</h3>
-                                        <p>Dimensions, mass, flattening, gravity, radius and temperature.</p>
+                                        <p>Dimensions, mass, flattening, gravity, inclination and temperature.</p>
                                     </div>
                                 </div>
                             </div>
@@ -107,7 +107,7 @@
                                 <div class="features_item sm-m-top-30">
                                     <div class="f_item_text">
                                         <h3>Orbital parameters</h3>
-                                        <p>Semimajor axis, perihelion, aphelion, eccentricity, orbital period and inclination.</p>
+                                        <p>Semimajor axis, perihelion, aphelion, eccentricity, orbital period and orbital speed.</p>
                                     </div>
                                 </div>
                             </div>
@@ -123,7 +123,7 @@
                                 <div class="features_item sm-m-top-30">
                                     <div class="f_item_text">
                                         <h3>Family</h3>
-                                        <p>All satellites, and the ability to navigate between satellites and the planet.</p>
+                                        <p>For every body, all its satellites and the ability to navigate between satellites and the star.</p>
                                     </div>
                                 </div>
                             </div>
@@ -145,13 +145,13 @@
                             <div class="reviews_content">
                                 <div class="col-md-6 realeasenote">
                                     <div class="reviews_item m-top-40">
-                                        <h3>04-13-2019 - 1.0.1 - Fix paramters</h3>
+                                        <h3>04-13-2019 - 1.0.1 - Fix parameters</h3>
                                         <p>brutData and datas are replaced by rowData and data.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 realeasenote">
                                     <div class="reviews_item m-top-40">
-                                        <h3>04-06-2019 - 1.0.0 - Physicals and orbitals data.</h3>
+                                        <h3>04-06-2019 - 1.0.0 - Physical and orbital data.</h3>
                                         <p>Adding data : volume, density, gravity, escape speed, radius, dimension, perihelion, aphelion and rotation & revolution speed.</p>
                                     </div>
                                 </div>
@@ -164,25 +164,25 @@
                                 <div class="col-md-6 realeasenote">
                                     <div class="reviews_item m-top-40">
                                         <h3>03-12-2019 - Website</h3>
-                                        <p>Make this website for describe the API. With release notes, API documentation, return data description and Swagger interface.</p>
+                                        <p>Creation of this website to describe the API. With release notes, API documentation, return data description and Swagger interface.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 realeasenote">
                                     <div class="reviews_item m-top-40">
                                         <h3>06-15-2018 - 0.1.0-beta - New data</h3>
-                                        <p>Adding asteroids and TNO. English name are authorised for key with a 301 redirection to the french name.</p>
+                                        <p>Adding asteroids and TNO. English names are authorized as keys with a 301 redirection to the French name.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 realeasenote">
                                     <div class="reviews_item m-top-40">
                                         <h3>05-30-2018 - 0.1.0-alpha - MVP</h3>
-                                        <p>First version of API online with planetes and moons. The swagger documentation is online too.</p>
+                                        <p>First version of API online with planets and moons. The swagger documentation is online too.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 realeasenote">
                                     <div class="reviews_item m-top-40">
                                         <h3>05-02-2018 - Just an idea.</h3>
-                                        <p>Any API with all Solar System data seems to exist. It's time to create one, dont it?</p>
+                                        <p>No API with all Solar System data seems to exist. It's time to create one, isn't it?</p>
                                     </div>
                                 </div>
                             </div>
@@ -205,7 +205,7 @@
                                 <div class="doc_item">
                                     <div class="f_item_text">
                                         <h3>All bodies in one request</h3>
-                                        <p>An URL returns all bodies in the database with all data :</p>
+                                        <p>An URL returns all bodies in the database with all data:</p>
                                         <code>https://api.le-systeme-solaire.net/rest/bodies/</code>
                                     </div>
                                 </div>
@@ -214,7 +214,7 @@
                                 <div class="doc_item">
                                     <div class="f_item_text">
                                         <h3>Boby by body</h3>
-                                        <p>An URL returns all data of one body :</p>
+                                        <p>An URL returns all data of one body:</p>
                                         <code>https://api.le-systeme-solaire.net/rest/bodies/{id}</code>
                                     </div>
                                 </div>
@@ -235,37 +235,37 @@
                                               <tr>
                                                 <th scope="row">1</th>
                                                 <td>data</td>
-                                                <td>The data you want to retrieve (comma separated).<br> Example : <code>data=id,semimajorAxis,isPlanet</code></td>
+                                                <td>The data you want to retrieve (comma separated).<br> Example: <code>data=id,semimajorAxis,isPlanet</code></td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">2</th>
                                                 <td>exclude</td>
-                                                <td>One or more data you want to exclude (comma separated).<br> Example : <code>exclude=id,isPlanet</code></td>
+                                                <td>One or more data you want to exclude (comma separated).<br> Example: <code>exclude=id,isPlanet</code></td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">2</th>
                                                 <td>order</td>
-                                                <td>A data you want to sort on and the sort direction (comma separated).<br> Example : <code>order=semimajorAxis,asc</code><br>NB : Only one data is authorized.</td>
+                                                <td>The sort order data you want to use and the sort direction (comma separated).<br> Example: <code>order=semimajorAxis,asc</code><br>NB : Only one data is authorized.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">3</th>
                                                 <td>page</td>
-                                                <td>Page number (number>=1) and page size (size>=1 and 20 by default) (comma separated).<br> Example : <code>page=1,10</code><br>NB : You cannot use "page" without "order"!</td>
+                                                <td>Page number (number>=1) and page size (size>=1 with 20 as default) (comma separated).<br> Example: <code>page=1,10</code><br>NB: You cannot use "page" without "order"!</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">4</th>
                                                 <td>rowData</td>
-                                                <td>Transform the object in records.<br>Example : <code>rowData=true</code><br>NB : This can also be done client-side in JavaScript!<br>NB : The default value is false.</td>
+                                                <td>Transform the objects in records.<br>Example: <code>rowData=true</code><br>NB: This can also be done client-side in JavaScript!<br>NB: The default value is false.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">5</th>
                                                 <td>filter[]</td>
-                                                <td>Filters to be applied. Each filter consists of a data, an operator and a value (comma separated).<br>Example : <code>filter[]=id,eq,mars</code><br>Accepted operators are : <ul id="operator"><li>cs (like)</li><li>sw (start with)</li><li>ew (end with)</li><li>eq (equal)</li><li>lt (less than)</li><li>le (less or equal than)</li><li>ge (greater or equal than)</li><li>gt (greater than)</li><li>bt (between)</li></ul>And all opposites operators : ncs - nsw - new - neq - nlt - nle - nge - ngt - nbt.<br> NB : if anyone filter is invalid, all filters will be ignore.</td>
+                                                <td>Filters to be applied. Each filter consists of a data, an operator and a value (comma separated).<br>Example: <code>filter[]=id,eq,mars</code><br>Accepted operators are: <ul id="operator"><li>cs (like)</li><li>sw (start with)</li><li>ew (end with)</li><li>eq (equal)</li><li>lt (less than)</li><li>le (less or equal than)</li><li>ge (greater or equal than)</li><li>gt (greater than)</li><li>bt (between)</li></ul>And all the opposite operators : ncs - nsw - new - neq - nlt - nle - nge - ngt - nbt.<br> NB: if any filter is invalid, all filters will be ignored.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">6</th>
                                                 <td>satisfy</td>
-                                                <td>Should all filters match (default).<br>Example : <code>satisfy=any</code><br>NB : the only one authorized value is any</td>
+                                                <td>Should all filters match (default).<br>Example: <code>satisfy=any</code><br>NB: the only authorized value is any</td>
                                               </tr>
                                             </tbody>
                                           </table>
@@ -314,13 +314,13 @@
                                                 <th scope="row">5</th>
                                                 <td>moons<br>[{moon, rel}, ...]</td>
                                                 <td>array<br>[{string, string}, ...]</td>
-                                                <td>Table with all moons.<br>moon : Moon name, rel : moon API url.</td>
+                                                <td>Table with all moons.<br>moon: Moon name, rel: moon API url.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">6</th>
                                                 <td>semimajorAxis</td>
                                                 <td>integer</td>
-                                                <td>Semimajor Axis of body in kilometres.</td>
+                                                <td>Semimajor Axis of the body in kilometres.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">7</th>
@@ -350,13 +350,13 @@
                                                 <th scope="row">11</th>
                                                 <td>mass<br>{massValue, massExponent}</td>
                                                 <td>object<br>{number, integer}</td>
-                                                <td>Boby mass in 10<sup>n</sup> kg.<br>massValue : body mass, massExponent : exponant 10.</td>
+                                                <td>Boby mass in 10<sup>n</sup> kg.<br>massValue: body mass, massExponent: exponent 10.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">12</th>
                                                 <td>vol<br>{volValue, volExponent}</td>
                                                 <td>object<br>{number, integer}</td>
-                                                <td>Body volume in 10<sup>n</sup> kg.<br>volValue : body volume, volExponent : exponant 10.</td>
+                                                <td>Body volume in 10<sup>n</sup> kg.<br>volValue: body volume, volExponent: exponant 10.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">13</th>
@@ -380,7 +380,7 @@
                                                 <th scope="row">16</th>
                                                 <td>meanRadius</td>
                                                 <td>integer</td>
-                                                <td>Radius in kilometres.</td>
+                                                <td>Mean radius in kilometres.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">17</th>
@@ -404,7 +404,7 @@
                                                 <th scope="row">20</th>
                                                 <td>dimension</td>
                                                 <td>string</td>
-                                                <td>Body dimension on the 3 axes X, Y et Z for non-spheric bodies.</td>
+                                                <td>Body dimension on the 3 axes X, Y et Z for non-spherical bodies.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">21</th>
@@ -422,7 +422,7 @@
                                                 <th scope="row">23</th>
                                                 <td>aroundPlanet<br>{planet, rel}</td>
                                                 <td>object<br>{string, string}</td>
-                                                <td>For a moon, the planet around she is orbiting.<br>planet : Panet name, rel : planet API url.</td>
+                                                <td>For a moon, the planet around which it is orbiting.<br>planet: Panet name, rel: planet API url.</td>
                                               </tr>
                                               <tr>
                                                 <th scope="row">24</th>
@@ -440,7 +440,7 @@
                                                 <th scope="row">26</th>
                                                 <td>alternativeName</td>
                                                 <td>string</td>
-                                                <td>Tempory name.</td>
+                                                <td>Temporary name.</td>
                                               </tr>
                                             </tbody>
                                           </table>
@@ -463,7 +463,7 @@
                             <nav class="navbar navbar-default bootsnav footer-menu no-background">
                                 <div class="container">  
                                     <div class="syssollink">
-                                        <p>By the same author : <a href="https://www.le-systeme-solaire.net">Le Système solaire à portée de votre souris</a>.</p>
+                                        <p>By the same author: <a href="https://www.le-systeme-solaire.net">Le Système solaire à portée de votre souris</a>.</p>
                                     </div>
                                 </div>   
                             </nav>
@@ -472,7 +472,7 @@
                         <div class="col-md-12">
                             <div class="main_footer text-center p-top-40 p-bottom-30">
                                 <p class="wow fadeInRight" data-wow-duration="1s">
-                                    Copyright &copy; 2019 All rights reserved
+                                    Copyright &copy; 2019 All rights reserved.
                                 </p>
                             </div>
                         </div>
