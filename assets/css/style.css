@@ -23,7 +23,7 @@ body {
 @-ms-viewport { width: device-width; }
 @-o-viewport { width: device-width; }
 @viewport { width: device-width; }
-
+.font-weight{font-weight: 700 !important;}
 /*
     Page Content
 ------------------------------------------*/
