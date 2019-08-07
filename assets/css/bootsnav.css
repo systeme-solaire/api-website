@@ -1102,7 +1102,7 @@ nav.navbar.bootsnav.no-background{
     }
     
     .attr-nav > ul > li > a{
-        padding: 16px 15px 15px;
+        padding: 16px 15px 22px;
     }
     
     .attr-nav > ul > li.dropdown > a.dropdown-toggle:before{
@@ -1266,7 +1266,7 @@ nav.navbar.bootsnav.no-background{
     }
     
     .attr-nav > ul{
-        margin-right: -10px;
+        margin-right: 0px;
     }
     
     .attr-nav > ul > li > a{
