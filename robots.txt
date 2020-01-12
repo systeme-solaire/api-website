@@ -1,0 +1,4 @@
+Sitemap: https://api.le-systeme-solaire.net/sitemap.xml
+User-agent: *
+Allow: /
+Allow: /en/
