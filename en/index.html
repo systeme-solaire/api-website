@@ -162,6 +162,14 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-4">
+                                <div class="features_item sm-m-top-30">
+                                    <div class="f_item_text">
+                                        <h3>Known objects count</h3>
+                                        <p>Known count of each object type : planets, moons, asteroids, comets.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -179,12 +187,19 @@
                             </div>
                             <div class="col-md-6 realeasenote">
                                 <div class="reviews_item m-top-40">
+                                    <h3>11-14-2020 - 1.1.0 - Known object count</h3>
+                                    <p>New endpoint /knowcount</p>
+                                    <p>Return the known count of each object type.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 realeasenote">
+                                <div class="reviews_item m-top-40">
                                     <h3>10-10-2020 - Axial tilt & Fix</h3>
                                     <p>Added axial tilt for each planet.</p>
                                     <p>Fix mean radius of the Sun.</p>
                                 </div>
                             </div>
-                        <div class="col-md-6 realeasenote">
+                            <div class="col-md-6 realeasenote">
                                 <div class="reviews_item m-top-40">
                                     <h3>07-20-2020 - Semimajor axis, perihelion and aphelion are big numbers</h3>
                                     <p>Semimajor axis, perihelion and aphelion are now bigint.</p>
@@ -261,7 +276,7 @@
                                     <h5>How to use the API?</h5>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 m-top-30">
                                 <div class="doc_item">
                                     <div class="f_item_text">
                                         <h3>All bodies in one request</h3>
@@ -270,7 +285,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 m-top-30">
                                 <div class="doc_item">
                                     <div class="f_item_text">
                                         <h3>Boby by body</h3>
@@ -278,11 +293,29 @@
                                         <code>https://api.le-systeme-solaire.net/rest/bodies/{id}</code>
                                     </div>
                                 </div>
-                            </div>      
+                            </div>
+                            <div class="col-md-6 m-top-30">
+                                <div class="doc_item">
+                                    <div class="f_item_text">
+                                        <h3>All known count</h3>
+                                        <p>An URL returns all known count for each object type :</p>
+                                        <code>https://api.le-systeme-solaire.net/rest/knowncount/</code>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 m-top-30">
+                                <div class="doc_item">
+                                    <div class="f_item_text">
+                                        <h3>Known count, object type by object type</h3>
+                                        <p>An URL returns known count for the object type :</p>
+                                        <code>https://api.le-systeme-solaire.net/rest/knowncount/{id}</code>
+                                    </div>
+                                </div>
+                            </div>   
                             <div class="col-md-12 m-top-30">
                                 <div class="doc_item">
                                     <div class="f_item_text">
-                                        <h3>API parameters</h3>
+                                        <h3>API parameters for /bodies</h3>
                                         <table class="table table-hover table-sm ">
                                             <thead>
                                               <tr>
@@ -335,7 +368,7 @@
                             <div class="col-md-12 m-top-30">
                                 <div class="doc_item">
                                     <div class="f_item_text">
-                                        <h3>Available data</h3>
+                                        <h3>Available data for /bodies</h3>
                                         <table class="table table-hover table-sm ">
                                             <thead>
                                               <tr>
@@ -390,7 +423,7 @@
                                               </tr>
                                               <tr>
                                                 <th scope="row">8</th>
-                                                <td>apheion</td>
+                                                <td>aphelion</td>
                                                 <td>integer</td>
                                                 <td>Aphelion in kilometres.</td>
                                               </tr>
@@ -513,6 +546,66 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-12 m-top-30">
+                                <div class="doc_item">
+                                    <div class="f_item_text">
+                                        <h3>API parameters /knowncount</h3>
+                                        <table class="table table-hover table-sm ">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Parameter</th>
+                                                <th scope="col">Action</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>rowData</td>
+                                                <td>Transform the objects in records.<br>Example: <code>rowData=true</code><br>NB: This can also be done client-side in JavaScript!<br>NB: The default value is false.</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 m-top-30">
+                                <div class="doc_item">
+                                    <div class="f_item_text">
+                                        <h3>Available data for /knowncount</h3>
+                                        <table class="table table-hover table-sm ">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col" class="colName">Name</th>
+                                                <th scope="col" class="colType">Type</th>
+                                                <th scope="col">Content</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>id</td>
+                                                <td>string</td>
+                                                <td>Object type.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">2</th>
+                                                <td>knowncount</td>
+                                                <td>integer</td>
+                                                <td>Known count.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">3</th>
+                                                <td>updateDate</td>
+                                                <td>string</td>
+                                                <td>Update date of the Known count.</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -538,7 +631,7 @@
                         <div class="col-md-12">
                             <div class="main_footer text-center p-top-40 p-bottom-30">
                                 <p class="wow fadeInRight" data-wow-duration="1s">
-                                    Copyright &copy; 2019 All rights reserved.
+                                    Made with <span class="text-danger">&#9829</span> in <img src="/assets/images/auvergne.png" class="auvergne" alt="Auvergne"> by Christophe - Copyright &copy; 2019-<script>document.write(new Date().getFullYear());</script> All rights reserved.
                                 </p>
                             </div>
                         </div>

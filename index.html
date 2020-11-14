@@ -162,6 +162,14 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-4">
+                                <div class="features_item sm-m-top-30">
+                                    <div class="f_item_text">
+                                        <h3>Nombre connu d'objet</h3>
+                                        <p>Nombre connu de chaque famille d'astre : planètes, satellites, astéroïdes, comètes.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -178,6 +186,13 @@
                                 </div>
                             </div>
                             <div class="reviews_content">
+                                <div class="col-md-6 realeasenote">
+                                    <div class="reviews_item m-top-40">
+                                        <h3>14/11/2020 - 1.1.0 - Nombre connu d'objet</h3>
+                                        <p>Nouveau end-point /knowcount</p>
+                                        <p>Renvoie le nombre d'astre connu à ce jour.</p>
+                                    </div>
+                                </div>
                                 <div class="col-md-6 realeasenote">
                                     <div class="reviews_item m-top-40">
                                         <h3>10/10/2020 - Inclinaison sur l'axe & Fix</h3>
@@ -261,7 +276,7 @@
                                     <h5>Comment utiliser l'API?</h5>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 m-top-30">
                                 <div class="doc_item">
                                     <div class="f_item_text">
                                         <h3>Tous les astres en une requête</h3>
@@ -270,7 +285,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 m-top-30">
                                 <div class="doc_item">
                                     <div class="f_item_text">
                                         <h3>Astre par astre</h3>
@@ -278,11 +293,29 @@
                                         <code>https://api.le-systeme-solaire.net/rest/bodies/{id}</code>
                                     </div>
                                 </div>
-                            </div>      
+                            </div>    
+                            <div class="col-md-6 m-top-30">
+                                <div class="doc_item">
+                                    <div class="f_item_text">
+                                        <h3>Tous les nombres d'objet connu</h3>
+                                        <p>Une URL renvoie tous les nombres d'objet connu dans le Système solaire :</p>
+                                        <code>https://api.le-systeme-solaire.net/rest/knowncount/</code>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 m-top-30">
+                                <div class="doc_item">
+                                    <div class="f_item_text">
+                                        <h3>Nombre connu, type d'objet par type d'objet</h3>
+                                        <p>Une URL renvoie le nombre connu d'objet du type demandé :</p>
+                                        <code>https://api.le-systeme-solaire.net/rest/knowncount/{id}</code>
+                                    </div>
+                                </div>
+                            </div>   
                             <div class="col-md-12 m-top-30">
                                 <div class="doc_item">
                                     <div class="f_item_text">
-                                        <h3>Les paramètres de l'API</h3>
+                                        <h3>Les paramètres de l'API /bodies</h3>
                                         <table class="table table-hover table-sm ">
                                             <thead>
                                               <tr>
@@ -335,7 +368,7 @@
                             <div class="col-md-12 m-top-30">
                                 <div class="doc_item">
                                     <div class="f_item_text">
-                                        <h3>Les données disponibles</h3>
+                                        <h3>Les données disponibles pour /bodies</h3>
                                         <table class="table table-hover table-sm ">
                                             <thead>
                                               <tr>
@@ -390,7 +423,7 @@
                                               </tr>
                                               <tr>
                                                 <th scope="row">8</th>
-                                                <td>apheion</td>
+                                                <td>aphelion</td>
                                                 <td>integer</td>
                                                 <td>L'aphélie en kilomètres.</td>
                                               </tr>
@@ -513,6 +546,66 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-md-12 m-top-30">
+                                <div class="doc_item">
+                                    <div class="f_item_text">
+                                        <h3>Les paramètres de l'API /knowncount</h3>
+                                        <table class="table table-hover table-sm ">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Paramètre</th>
+                                                <th scope="col">Action</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>rowData</td>
+                                                <td>Permet de transformer les objets en enregistrement.<br>Exemple : <code>rowData=true</code><br>NB : Cette action peut être faite en JavaScript coté client!<br>NB : La valeur par défaut est false.</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 m-top-30">
+                                <div class="doc_item">
+                                    <div class="f_item_text">
+                                        <h3>Les données disponibles pour /knowncount</h3>
+                                        <table class="table table-hover table-sm ">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col" class="colName">Nom</th>
+                                                <th scope="col" class="colType">Type</th>
+                                                <th scope="col">Contenu</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>id</td>
+                                                <td>string</td>
+                                                <td>Type d'astre.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">2</th>
+                                                <td>knowncount</td>
+                                                <td>integer</td>
+                                                <td>Nombre connu.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">3</th>
+                                                <td>updateDate</td>
+                                                <td>string</td>
+                                                <td>Date d'actualisation du nombre connu.</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -538,7 +631,7 @@
                         <div class="col-md-12">
                             <div class="main_footer text-center p-top-40 p-bottom-30">
                                 <p class="wow fadeInRight" data-wow-duration="1s">
-                                    Copyright &copy; 2019 Tous droits réservés
+                                    Fait avec <span class="text-danger">&#9829</span> en <img src="/assets/images/auvergne.png" class="auvergne" alt="Auvergne"> par Christophe - Copyright &copy; 2019-<script>document.write(new Date().getFullYear());</script> Tous droits réservés
                                 </p>
                             </div>
                         </div>
