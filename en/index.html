@@ -188,6 +188,14 @@
                             </div>
                             <div class="col-md-6 realeasenote">
                                 <div class="reviews_item m-top-40">
+                                    <h3>01-08-2022 - 1.2.1 - New data and fix</h3>
+                                    <p>Added bodyType.</p>
+                                    <p>Values massValue, massExponent, volValue, volExponent are permitted in Filters.</p>
+                                    <p>isplanet can be used with true or false value.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 realeasenote">
+                                <div class="reviews_item m-top-40">
                                     <h3>06-07-2021 - 1.2.0 - New data</h3>
                                     <p>Added Mean temperature and orbital characteristics Mean anomaly, Longitude of ascending node and Argument of perihelion.</p>
                                 </div>
@@ -343,27 +351,27 @@
                                                 <td>One or more data you want to exclude (comma separated).<br> Example: <code>exclude=id,isPlanet</code></td>
                                               </tr>
                                               <tr>
-                                                <th scope="row">2</th>
+                                                <th scope="row">3</th>
                                                 <td>order</td>
                                                 <td>The sort order data you want to use and the sort direction (comma separated).<br> Example: <code>order=semimajorAxis,asc</code><br>NB : Only one data is authorized.</td>
                                               </tr>
                                               <tr>
-                                                <th scope="row">3</th>
+                                                <th scope="row">4</th>
                                                 <td>page</td>
                                                 <td>Page number (number>=1) and page size (size>=1 with 20 as default) (comma separated).<br> Example: <code>page=1,10</code><br>NB: You cannot use "page" without "order"!</td>
                                               </tr>
                                               <tr>
-                                                <th scope="row">4</th>
+                                                <th scope="row">5</th>
                                                 <td>rowData</td>
                                                 <td>Transform the objects in records.<br>Example: <code>rowData=true</code><br>NB: This can also be done client-side in JavaScript!<br>NB: The default value is false.</td>
                                               </tr>
                                               <tr>
-                                                <th scope="row">5</th>
+                                                <th scope="row">6</th>
                                                 <td>filter[]</td>
                                                 <td>Filters to be applied. Each filter consists of a data, an operator and a value (comma separated).<br>Example: <code>filter[]=id,eq,mars</code><br>Accepted operators are: <ul id="operator"><li>cs (like)</li><li>sw (start with)</li><li>ew (end with)</li><li>eq (equal)</li><li>lt (less than)</li><li>le (less or equal than)</li><li>ge (greater or equal than)</li><li>gt (greater than)</li><li>bt (between)</li></ul>And all the opposite operators : ncs - nsw - new - neq - nlt - nle - nge - ngt - nbt.<br> NB: if any filter is invalid, all filters will be ignored.</td>
                                               </tr>
                                               <tr>
-                                                <th scope="row">6</th>
+                                                <th scope="row">7</th>
                                                 <td>satisfy</td>
                                                 <td>Should all filters match (default).<br>Example: <code>satisfy=any</code><br>NB: the only authorized value is any</td>
                                               </tr>
@@ -571,6 +579,12 @@
                                                 <td>longAscNode</td>
                                                 <td>decimal</td>
                                                 <td>Longitude of ascending node in degree.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">32</th>
+                                                <td>bodyType</td>
+                                                <td>string</td>
+                                                <td>The body type : Star, Planet, Dwarf Planet, Asteroid, Comet or Moon.</td>
                                               </tr>
                                             </tbody>
                                           </table>

@@ -189,6 +189,14 @@
                             <div class="reviews_content">
                                 <div class="col-md-6 realeasenote">
                                     <div class="reviews_item m-top-40">
+                                        <h3>08/01/2022 - 1.2.1 - Nouvelles données et corrections de bugs</h3>
+                                        <p>Ajout du type d'astre.</p>
+                                        <p>Les valeurs massValue, massExponent, volValue, volExponent sont filtrables.</p>
+                                        <p>isplanet est filtrable en valeur booléenne true ou false.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 realeasenote">
+                                    <div class="reviews_item m-top-40">
                                         <h3>07/06/2021 - 1.2.0 - Nouvelles données</h3>
                                         <p>Ajout de la température moyenne et des caractéristiques orbitales suivante Anomalie moyenne, Nœud ascendant et Argument du périhélie.</p>
                                     </div>
@@ -343,27 +351,27 @@
                                                 <td>Permet d'exclure certaines données (séparé par une virgule).<br> Exemple : <code>exclude=id,isPlanet</code></td>
                                               </tr>
                                               <tr>
-                                                <th scope="row">2</th>
+                                                <th scope="row">3</th>
                                                 <td>order</td>
                                                 <td>Permet de trier le résultat.<br> Exemple : <code>order=semimajorAxis,asc</code><br>NB : Un seul paramètre de tri autorisé.</td>
                                               </tr>
                                               <tr>
-                                                <th scope="row">3</th>
+                                                <th scope="row">4</th>
                                                 <td>page</td>
                                                 <td>Permet de paginer le résultat d'une requête triée. Il faut préciser le numéro de page (numéro>=1) et la taille des page (taille>=1 and 20 par défaut).<br> Exemple : <code>page=1,10</code><br>NB : Vous ne pouvez pas utiliser “page” sans le paramètre "order".</td>
                                               </tr>
                                               <tr>
-                                                <th scope="row">4</th>
+                                                <th scope="row">5</th>
                                                 <td>rowData</td>
                                                 <td>Permet de transformer les objets en enregistrement.<br>Exemple : <code>rowData=true</code><br>NB : Cette action peut être faite en JavaScript coté client!<br>NB : La valeur par défaut est false.</td>
                                               </tr>
                                               <tr>
-                                                <th scope="row">5</th>
+                                                <th scope="row">6</th>
                                                 <td>filter[]</td>
                                                 <td>Permet de filtrer le résultat. Chaque filtre est composé d'une donnée, un opérateur et une valeur (séparé par une virgule).<br>Exemple : <code>filter[]=id,eq,mars</code><br>Les opérateurs acceptés sont : <ul id="operator"><li>cs (like)</li><li>sw (start with)</li><li>ew (end with)</li><li>eq (equal)</li><li>lt (less than)</li><li>le (less or equal than)</li><li>ge (greater or equal than)</li><li>gt (greater than)</li><li>bt (between)</li></ul>Tous opérateurs inverses existent : ncs - nsw - new - neq - nlt - nle - nge - ngt - nbt.<br> NB : Si un filtre est invalide il sera ignoré.</td>
                                               </tr>
                                               <tr>
-                                                <th scope="row">6</th>
+                                                <th scope="row">7</th>
                                                 <td>satisfy</td>
                                                 <td>Permet de forcer si tous les filtres s'appliquent (choix par défaut) ou juste certains.<br>Exemple : <code>satisfy=any</code><br>NB : la seule valeur possible est any</td>
                                               </tr>
@@ -571,6 +579,12 @@
                                                 <td>longAscNode</td>
                                                 <td>decimal</td>
                                                 <td>Nœud ascendant en degré.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">32</th>
+                                                <td>bodyType</td>
+                                                <td>string</td>
+                                                <td>Type d'astre : Star, Planet, Dwarf Planet, Asteroid, Comet ou Moon.</td>
                                               </tr>
                                             </tbody>
                                           </table>
