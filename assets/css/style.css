@@ -8,12 +8,15 @@ body {
     margin-right: 0;
     font-weight: 400;
     width:100%;
-    font-family: "Helvetica Neue",Helvetica,Verdana,Arial,sans-serif;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Verdana,Arial,sans-serif;
 }
 /*------------------------------------------------------------------*/
 /*   IE10 in Windows 8 and Windows Phone 8 Bug fix
 /*-----------------------------------------------------------------*/
-
+@font-face {
+    font-family: "Open Sans";
+    src: url(fonts/OpenSans-Regular.ttf);
+}
 @-webkit-viewport { width: device-width; }
 @-moz-viewport { width: device-width; }
 @-ms-viewport { width: device-width; }
