@@ -381,8 +381,22 @@ Button
     border-color: #eee;
 }
 
+.btn-ask{
+    color: #fff;
+    background-color: #ebb543;
+    border:1px solid;
+    border-color: #c0862f;
+    padding: 1rem 2rem;
+}
+
+.btn-ask:hover{
+    color: #775908;
+    background-color: #eee;
+    border-color: #eee;
+}
+
 /*
-socail icon
+social icon
 --------------------------------*/
 /*
 Extra height css

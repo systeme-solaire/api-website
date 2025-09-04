@@ -28,8 +28,8 @@
             "@type": "WebPage",
             "headline": "Solar system OpenData",
             "dateCreated": "2018-05-02",
-            "datePublished": "2020-11-14",
-            "dateModified": "2020-11-14",
+            "datePublished": "2025-09-04",
+            "dateModified": "2025-09-04",
             "keywords": "OpenData, API",
             "mainEntityOfPage": "https://api.le-systeme-solaire.net",
             "url": "https://api.le-systeme-solaire.net/en/",
@@ -94,8 +94,9 @@
                                     <h1 class="text-white">The Solar System OpenData</h1>
                                 </div>
                                 <div class="home_btns m-top-40">
-                                    <a href="https://api.le-systeme-solaire.net/rest/" class="btn btn-access m-top-20">API access</a>
-                                    <a href="https://api.le-systeme-solaire.net/swagger/" class="btn btn-swagger m-top-20">Swagger UI</a>
+                                    <a href="../rest/" class="btn btn-access m-top-20">API access</a>
+                                    <a href="../swagger/" class="btn btn-swagger m-top-20">Swagger UI</a>
+                                    <a href="../generatekey.html" class="btn btn-ask m-top-20">Get API key</a>
                                 </div>
                             </div>
 
@@ -104,9 +105,6 @@
                                     <img src="../assets/images/api.png" alt="Solar system OpenData" />
                                 </div>
                             </div>
-                        </div>
-                        <div class="scrooldown">
-                            <a href="#features"><i class="fa fa-chevron-down"></i></a>
                         </div>
                     </div>
                 </div>
@@ -183,6 +181,13 @@
                                 <div class="head_title text-center">
                                     <h2>Version</h2>
                                     <h5>A living API</h5>
+                                </div>
+                            </div>
+                            <div class="col-md-6 realeasenote">
+                                <div class="reviews_item m-top-40">
+                                    <h3>09-04-2025 - Authorization</h3>
+                                    <p>Added a mandatory bearer token for calling API.</p>
+                                    <p>Token and access keep free.</p>
                                 </div>
                             </div>
                             <div class="col-md-6 realeasenote">
@@ -333,6 +338,18 @@
                                     </div>
                                 </div>
                             </div>   
+                            <div class="col-md-12 m-top-30">
+                                <div class="doc_item">
+                                    <div class="f_item_text">
+                                        <h3>Authentification</h3>
+                                        <p>Identification is mandatory. Get a free token.</p>
+                                        <code>https://api.le-systeme-solaire.net/generatekey.html</code>
+                                        <br><br>
+                                        <p>All API calls must include an additional header.</p>
+                                        <code>Authorization: Bearer _UUID_</code>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="col-md-12 m-top-30">
                                 <div class="doc_item">
                                     <div class="f_item_text">
