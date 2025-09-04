@@ -1,5 +1,7 @@
 Sitemap: https://api.le-systeme-solaire.net/sitemap.xml
 User-agent: *
 Disallow: /rest/
+Disallow: /register.php
+Disallow: /validate.php
 Allow: /
 Allow: /en/
