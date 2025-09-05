@@ -3,8 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <title>Solar system OpenData - Get your API key</title>
+        <meta name="description" content="Solar system OpenData - Get your API key">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="../favicon.ico">
+        <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/bootsnav.min.css">
+        <link rel="stylesheet" href="../assets/css/style.min.css">
+        <link rel="stylesheet" href="../assets/css/responsive.min.css" />
         <style>
-
         .card {
             background: #fff;
             padding: 2rem;
@@ -53,15 +60,10 @@
         border-radius: 6px;
         cursor: pointer;
         }
+        .main_home {
+        height: 830px;
+        }
         </style>
-        <meta name="description" content="Solar system OpenData - Get your API key">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/png" href="../favicon.ico">
-        <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
-        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../assets/css/bootsnav.min.css">
-        <link rel="stylesheet" href="../assets/css/style.min.css">
-        <link rel="stylesheet" href="../assets/css/responsive.min.css" />
         <meta property="og:title" content="Solar system OpenData - Get your API key">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://api.le-systeme-solaire.net/register.html">
@@ -109,7 +111,7 @@
                 <div class="container">  
                     <div class="attr-nav">
                         <ul>
-                            <li><a href="../" title="Version française" class="font-weight">Fr</a></li>
+                            <li><a href="../generatekey.html" title="Version française" class="font-weight">Fr</a></li>
                             <li><a href="https://github.com/systeme-solaire" target="_blank"><i class="fa fa-github"></i></a></li>
                             <li><a href="https://www.facebook.com/le.systeme.solaire" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="https://twitter.com/systeme_solaire" target="_blank"><i class="fa fa-twitter"></i></a></li>
@@ -120,7 +122,7 @@
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                             <i class="fa fa-bars"></i>
                         </button>
-                        <a class="navbar-brand" href="https://api.le-systeme-solaire.net">
+                        <a class="navbar-brand" href="https://api.le-systeme-solaire.net/en/">
                             <img src="../assets/images/logo.png" class="logo logo-scrolled" alt="L'OpenData du Système solaire">
                         </a>
                     </div>
@@ -136,14 +138,14 @@
                 <div class="container">
                     <div class="row">
                         <div class="main_home">
-                            <div class="col-md-12 col-xs-offset-4">
+                            <div class="col-md-12 col-xs-offset-1">
                                 <div class="card">
                                     <h2>Get your API key</h2>
                                     <p>Enter your email to get your free API Key.</p>
 
                                     <form id="registerForm">
                                         <input type="email" name="email" id="email" placeholder="Your email" required>
-
+                                        <input id="lang" name="lang" type="hidden" value="en">
                                         <div class="captcha-container">
                                             <img src="../include/captcha.php" id="captchaImage" alt="captcha" title="Clic to reload">
                                             <input type="text" name="captcha" id="captcha" placeholder="Code captcha" required>
@@ -158,11 +160,6 @@
                     </div>
                 </div>
             </section> 
-            
-        
-            <div class="scrollup">
-                <a href="#"><i class="fa fa-chevron-up"></i></a>
-            </div>
             
             <footer id="footer" class="footer bg-black m-top-100">
                 <div class="container">
@@ -180,7 +177,7 @@
                         <div class="col-md-12">
                             <div class="main_footer text-center p-top-40 p-bottom-30">
                                 <p class="wow fadeInRight" data-wow-duration="1s">
-                                    Made with <span class="text-danger">&#9829;</span> in <img src="/assets/images/auvergne.png" class="auvergne" alt="Auvergne"> by Christophe - Copyright &copy; 2019-<script>document.write(new Date().getFullYear());</script> All rights reserved.
+                                    Made with <span class="text-danger">&#9829;</span> in <img src="../assets/images/auvergne.png" class="auvergne" alt="Auvergne"> by Christophe - Copyright &copy; 2019-<script>document.write(new Date().getFullYear());</script> All rights reserved.
                                 </p>
                             </div>
                         </div>
@@ -189,10 +186,10 @@
             </footer>
         </div>
 
-        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
-        <script src="assets/js/vendor/bootstrap.min.js"></script>
-        <script src="assets/js/jquery.easing.1.3.js"></script>
-        <script src="assets/js/main.js"></script>
+        <script src="../assets/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="../assets/js/vendor/bootstrap.min.js"></script>
+        <script src="../assets/js/jquery.easing.1.3.js"></script>
+        <script src="../assets/js/main.js"></script>
 
         <script>
             // Reload captcha image on click
