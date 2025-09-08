@@ -4,4 +4,6 @@
 <url><loc>https://api.le-systeme-solaire.net/index.html</loc><changefreq>daily</changefreq><priority>1</priority></url>
 <url><loc>https://api.le-systeme-solaire.net/swagger/</loc><changefreq>daily</changefreq><priority>1</priority></url>
 <url><loc>https://api.le-systeme-solaire.net/en/</loc><changefreq>daily</changefreq><priority>1</priority></url>
+<url><loc>https://api.le-systeme-solaire.net/generatekey.html</loc><changefreq>daily</changefreq><priority>1</priority></url>
+<url><loc>https://api.le-systeme-solaire.net/en/generatekey.html</loc><changefreq>daily</changefreq><priority>1</priority></url>
 </urlset>
