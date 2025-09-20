@@ -120,7 +120,7 @@
                                     <h5>Tout ce qui est nécessaire</h5>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6 feature">
                                 <div class="features_item sm-m-top-30">
                                     <div class="f_item_text">
                                         <h3>Tous les astres principaux</h3>
@@ -128,7 +128,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6 feature">
                                 <div class="features_item sm-m-top-30">
                                     <div class="f_item_text">
                                         <h3>Caractéristiques physiques</h3>
@@ -136,7 +136,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6 feature">
                                 <div class="features_item sm-m-top-30">
                                     <div class="f_item_text">
                                         <h3>Caractéristiques orbitales</h3>
@@ -144,15 +144,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6 feature">
                                 <div class="features_item sm-m-top-30">
                                     <div class="f_item_text">
                                         <h3>Historique</h3>
-                                        <p>Découverte et découvreur, désignation temporaire et nom anglais.</p>
+                                        <p>Date de découverte et découvreur, désignation temporaire et nom anglais.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6 feature">
                                 <div class="features_item sm-m-top-30">
                                     <div class="f_item_text">
                                         <h3>Grande famille</h3>
@@ -160,11 +160,19 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6 feature">
                                 <div class="features_item sm-m-top-30">
                                     <div class="f_item_text">
                                         <h3>Nombre connu d'objet</h3>
                                         <p>Nombre connu de chaque famille d'astre : planètes, satellites, astéroïdes, comètes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 feature">
+                                <div class="features_item sm-m-top-30">
+                                    <div class="f_item_text">
+                                        <h3>La position des objets dans le ciel</h3>
+                                        <p>Permet d'obtenir la position des astres dnas le ciel pour la position d'un observateur.</p>
                                     </div>
                                 </div>
                             </div>
@@ -184,6 +192,13 @@
                                 </div>
                             </div>
                             <div class="reviews_content">
+                                <div class="col-md-6 realeasenote">
+                                    <div class="reviews_item m-top-40">
+                                        <h3>20/09/2025 - Position des astres</h3>
+                                        <p>Ajout d'un nouveau end-point : /positions</p>
+                                        <p>Permet d'obtenir la position des astres dans le ciel pour la position d'un observateur.</p>
+                                    </div>
+                                </div>
                                 <div class="col-md-6 realeasenote">
                                     <div class="reviews_item m-top-40">
                                         <h3>04/09/2025 - Authentification</h3>
@@ -335,6 +350,17 @@
                                         <h3>Nombre connu, type d'objet par type d'objet</h3>
                                         <p>Une URL renvoie le nombre connu d'objet du type demandé :</p>
                                         <code>https://api.le-systeme-solaire.net/rest/knowncount/{id}</code>
+                                    </div>
+                                </div>
+                            </div>   
+                            <div class="col-md-6 m-top-30">
+                                <div class="doc_item">
+                                    <div class="f_item_text">
+                                        <h3>Position des objets dans le ciel</h3>
+                                        <p>Calcul des positions astronomiques du Soleil, de la Lune et des planètes.</p>
+                                        <p>Ascension Droite (HMS), Déclinaison (DMS), Azimut (DMS), Altitude (DMS)</p>
+                                        <p>Algorithmes de Paul Schlyter, corrections avancées. Perturbations planétaires. Corrections topocentriques.</p>
+                                        <code>https://api.le-systeme-solaire.net/rest/positions</code>
                                     </div>
                                 </div>
                             </div>   
@@ -668,6 +694,98 @@
                                                 <td>updateDate</td>
                                                 <td>string</td>
                                                 <td>Date d'actualisation du nombre connu.</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 m-top-30">
+                                <div class="doc_item">
+                                    <div class="f_item_text">
+                                        <h3>Les paramètres de l'API /positions</h3>
+                                        <table class="table table-hover table-sm ">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Paramètre</th>
+                                                <th scope="col">Action</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>lon</td>
+                                                <td>Longitude de l'observateur.<br>Exemple : <code>lon=45,783552</code></td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>lat</td>
+                                                <td>Latitude de l'observateur.<br>Exemple : <code>lat=3,071572</code></td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>elev</td>
+                                                <td>Altitude de l'observateur.<br>Exemple : <code>elev=400</code></td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>datetime</td>
+                                                <td>Date et heure UTC de l'observateur.<br>Exemple : <code>datetime=2025-09-20T13:05:48</code></td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>zone</td>
+                                                <td>Fuseau horraire.<br>Exemple : <code>zone=2</code></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 m-top-30">
+                                <div class="doc_item">
+                                    <div class="f_item_text">
+                                        <h3>Les données disponibles pour /positions</h3>
+                                        <table class="table table-hover table-sm ">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col" class="colName">Nom</th>
+                                                <th scope="col" class="colType">Type</th>
+                                                <th scope="col">Contenu</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>name</td>
+                                                <td>string</td>
+                                                <td>Nom de  l'astre.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">2</th>
+                                                <td>ra</td>
+                                                <td>string</td>
+                                                <td>Ascension Droite en heure-minute-seconde.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">3</th>
+                                                <td>dec</td>
+                                                <td>string</td>
+                                                <td>Déclinaison en degre-minute-seconde.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">4</th>
+                                                <td>az</td>
+                                                <td>string</td>
+                                                <td>Azimut en degre-minute-seconde.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">5</th>
+                                                <td>alt</td>
+                                                <td>string</td>
+                                                <td>Altitude en degre-minute-seconde.</td>
                                               </tr>
                                             </tbody>
                                           </table>

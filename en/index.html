@@ -120,7 +120,7 @@
                                     <h5>Everything you need</h5>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6 feature">
                                 <div class="features_item sm-m-top-30">
                                     <div class="f_item_text">
                                         <h3>Main bodies</h3>
@@ -128,7 +128,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6 feature">
                                 <div class="features_item sm-m-top-30">
                                     <div class="f_item_text">
                                         <h3>Physical characteristics</h3>
@@ -136,7 +136,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6 feature">
                                 <div class="features_item sm-m-top-30">
                                     <div class="f_item_text">
                                         <h3>Orbital parameters</h3>
@@ -144,7 +144,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6 feature">
                                 <div class="features_item sm-m-top-30">
                                     <div class="f_item_text">
                                         <h3>History</h3>
@@ -152,7 +152,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6 feature">
                                 <div class="features_item sm-m-top-30">
                                     <div class="f_item_text">
                                         <h3>Family</h3>
@@ -160,11 +160,19 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-6 feature">
                                 <div class="features_item sm-m-top-30">
                                     <div class="f_item_text">
                                         <h3>Known objects count</h3>
                                         <p>Known count of each object type : planets, moons, asteroids, comets.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 feature">
+                                <div class="features_item sm-m-top-30">
+                                    <div class="f_item_text">
+                                        <h3>The position of objects in the sky</h3>
+                                        <p>Allows you to obtain the position of celestial bodies in the sky for an observer's location.</p>
                                     </div>
                                 </div>
                             </div>
@@ -183,6 +191,13 @@
                                     <h5>A living API</h5>
                                 </div>
                             </div>
+                            <div class="col-md-6 realeasenote">
+                                    <div class="reviews_item m-top-40">
+                                        <h3>20/09/2025 - Position of objects</h3>
+                                        <p>Addition of a new endpoint: /positions.</p>
+                                        <p>Allows you to obtain the position of the objcts in the sky for the location of an observer.</p>
+                                    </div>
+                                </div>
                             <div class="col-md-6 realeasenote">
                                 <div class="reviews_item m-top-40">
                                     <h3>09-04-2025 - Authorization</h3>
@@ -338,6 +353,17 @@
                                     </div>
                                 </div>
                             </div>   
+                            <div class="col-md-6 m-top-30">
+                                <div class="doc_item">
+                                    <div class="f_item_text">
+                                        <h3>Position of objects in the sky</h3>
+                                        <p>Calculation of the astronomical positions of the Sun, Moon, and planets.</p>
+                                        <p>Right Ascension (HMS), Declination (DMS), Azimuth (DMS), Altitude (DMS)</p>
+                                        <p>Algorithms by Paul Schlyter, advanced corrections. Planetary perturbations. Topocentric corrections.</p>
+                                        <code>https://api.le-systeme-solaire.net/rest/positions</code>
+                                    </div>
+                                </div>
+                            </div> 
                             <div class="col-md-12 m-top-30">
                                 <div class="doc_item">
                                     <div class="f_item_text">
@@ -668,6 +694,98 @@
                                                 <td>updateDate</td>
                                                 <td>string</td>
                                                 <td>Update date of the Known count.</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 m-top-30">
+                                <div class="doc_item">
+                                    <div class="f_item_text">
+                                        <h3>API parameters /positions</h3>
+                                        <table class="table table-hover table-sm ">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Parameter</th>
+                                                <th scope="col">Action</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>lon</td>
+                                                <td>Longitude for observator.<br>Example : <code>lon=45,783552</code></td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>lat</td>
+                                                <td>Latitude for observator.<br>Example : <code>lat=3,071572</code></td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>elev</td>
+                                                <td>Altitude for observator.<br>Example : <code>elev=400</code></td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>datetime</td>
+                                                <td>Date & hour UTC for observator.<br>Example : <code>datetime=2025-09-20T13:05:48</code></td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>zone</td>
+                                                <td>Time zone.<br>Example : <code>zone=2</code></td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 m-top-30">
+                                <div class="doc_item">
+                                    <div class="f_item_text">
+                                        <h3>Available data for /positions</h3>
+                                        <table class="table table-hover table-sm ">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col" class="colName">Name</th>
+                                                <th scope="col" class="colType">Type</th>
+                                                <th scope="col">Content</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>name</td>
+                                                <td>string</td>
+                                                <td>Name of object.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">2</th>
+                                                <td>ra</td>
+                                                <td>string</td>
+                                                <td>Right Ascension in hour-minute-seconde.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">3</th>
+                                                <td>dec</td>
+                                                <td>string</td>
+                                                <td>Declination in degree-minute-seconde.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">4</th>
+                                                <td>az</td>
+                                                <td>string</td>
+                                                <td>Azimuth in degree-minute-seconde.</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">5</th>
+                                                <td>alt</td>
+                                                <td>string</td>
+                                                <td>Altitude in degree-minute-seconde.</td>
                                               </tr>
                                             </tbody>
                                           </table>
