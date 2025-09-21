@@ -6,4 +6,5 @@
 <url><loc>https://api.le-systeme-solaire.net/en/</loc><changefreq>daily</changefreq><priority>1</priority></url>
 <url><loc>https://api.le-systeme-solaire.net/generatekey.html</loc><changefreq>daily</changefreq><priority>1</priority></url>
 <url><loc>https://api.le-systeme-solaire.net/en/generatekey.html</loc><changefreq>daily</changefreq><priority>1</priority></url>
+<url><loc>https://api.le-systeme-solaire.net/position.html</loc><changefreq>daily</changefreq><priority>1</priority></url>
 </urlset>
