@@ -5,24 +5,24 @@
         <title>Position des astres en explopitant l'API OpenData du système solaire</title>
         <meta name="description" content="Position des astres en explopitant l'API OpenData du système solaire">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/png" href="favicon.ico">
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/bootsnav.min.css">
-        <link rel="stylesheet" href="assets/css/style.min.css">
-        <link rel="stylesheet" href="assets/css/responsive.min.css" />
-        <link rel="stylesheet" href="assets/css/position.css" />
+        <link rel="icon" type="image/png" href="../favicon.ico">
+        <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/bootsnav.min.css">
+        <link rel="stylesheet" href="../assets/css/style.min.css">
+        <link rel="stylesheet" href="../assets/css/responsive.min.css" />
+        <link rel="stylesheet" href="../assets/css/position.css" />
         <meta property="og:title" content="Position des astres en explopitant l'API OpenData du système solaire">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://api.le-systeme-solaire.net/position.html">
+        <meta property="og:url" content="https://api.le-systeme-solaire.net/en/position.html">
         <meta property="og:image" content="https://api.le-systeme-solaire.net/assets/images/api.png">
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:site" content="@systeme_solaire" />
-        <meta property="twitter:url" content="https://www.le-systeme-solaire.net/position.html" />
+        <meta property="twitter:url" content="https://www.le-systeme-solaire.net/en/position.html" />
         <meta property="twitter:title" content="L'OpenData du Système solaire" />
         <meta property="twitter:description" content="Position des astres en explopitant l'API OpenData du système solaire" />
         <meta property="twitter:image" content="https://api.le-systeme-solaire.net/assets/images/api.png" />
-        <link rel="canonical" href="https://api.le-systeme-solaire.net/position.html">
+        <link rel="canonical" href="https://api.le-systeme-solaire.net/en/position.html">
         <script type="application/ld+json">
             {
             "@context": "http://schema.org",
@@ -33,7 +33,7 @@
             "dateModified": "2025-09-04",
             "keywords": "OpenData, API",
             "mainEntityOfPage": "https://api.le-systeme-solaire.net",
-            "url": "https://api.le-systeme-solaire.net/position.html",
+            "url": "https://api.le-systeme-solaire.net/en/position.html",
             "image": [
                 "https://api.le-systeme-solaire.net/assets/images/api.png"
             ],
@@ -59,7 +59,7 @@
                 <div class="container">  
                     <div class="attr-nav">
                         <ul>
-                            <li><a href="/en/position.html" title="English version" class="font-weight">En</a></li>
+                            <li><a href="../position.html" title="Version française" class="font-weight">Fr</a></li>
                             <li><a href="https://github.com/systeme-solaire" target="_blank"><i class="fa fa-github"></i></a></li>
                             <li><a href="https://www.facebook.com/le.systeme.solaire" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="https://twitter.com/systeme_solaire" target="_blank"><i class="fa fa-twitter"></i></a></li>
@@ -70,8 +70,8 @@
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                             <i class="fa fa-bars"></i>
                         </button>
-                        <a class="navbar-brand" href="https://api.le-systeme-solaire.net">
-                            <img src="assets/images/logo.png" class="logo logo-scrolled" alt="L'OpenData du Système solaire">
+                        <a class="navbar-brand" href="https://api.le-systeme-solaire.net/en/">
+                            <img src="../assets/images/logo.png" class="logo logo-scrolled" alt="Solar system OpenData">
                         </a>
                     </div>
                     <div class="collapse navbar-collapse" id="navbar-menu">
@@ -87,10 +87,10 @@
                         <div class="main_home">
                             <div class="col-md-6">
                                 <div class="home_text">
-                                    <h1 class="text-white">Positions astronomiques des astres</h1>
-                                    <p class="text-white">Calcul des positions du Soleil, de la Lune et des planètes en temps réel.</p>
-                                    <p class="text-white">Démo du endpoint https://api.le-systeme-solaire.net/rest/positions.</p>
-                                    <p class="text-white">Par défaut, vous êtes à Clermont-Ferrand, France.</p>
+                                    <h1 class="text-white">Positions of objects in the sky</h1>
+                                    <p class="text-white">Calculation of the positions of the Sun, Moon, and planets in real time.</p>
+                                    <p class="text-white">https://api.le-systeme-solaire.net/rest/positions endpoint demo.</p>
+                                    <p class="text-white">By default, you are in Clermont-Ferrand, France.</p>
                                 </div>
                             </div>
                         </div>
@@ -104,8 +104,8 @@
                         <div class="main_features p-top-30">
                             <div class="col-md-8 col-md-offset-2 col-sm-12">
                                 <div class="head_title text-center">
-                                    <h2>Votre position</h2>
-                                    <h5>Indiquez précisement le lieu et l'heure UTC de l'observation</h5>
+                                    <h2>Your position</h2>
+                                    <h5>Specify the exact location and UTC time of the observation.</h5>
                                 </div>
                             </div>
                             <div class="controls">
@@ -123,24 +123,24 @@
                                         <input type="number" id="altitude" value="406" placeholder="406">
                                     </div>
                                     <div class="col-md-4 form-group">
-                                        <label for="timezone">Zone horaire (UTC+)</label>
+                                        <label for="timezone">Time zone (UTC+)</label>
                                         <input type="number" id="timezone" step="1" value="2" placeholder="2">
                                         <small class="legendmini">
-                                            Votre décalage UTC actuel.<br>
-                                            Ex: France été=+2, hiver=+1, New York=-5/-4, Tokyo=+9
+                                            Your current UTC offset.<br>
+                                            Ex: France summer=+2, winter=+1, New York=-5/-4, Tokyo=+9
                                         </small>
                                     </div>
                                     <div class="col-md-4 form-group">
-                                        <label for="datetime">Date et heure (UTC/GMT)</label>
+                                        <label for="datetime">Date & hour (UTC/GMT)</label>
                                         <input type="datetime-local" id="datetime" style="padding:2px">
                                         <small class="legendmini" id="timezone-info">
-                                            Heure UTC (temps universel coordonné)
+                                            UTC hour (Coordinated Universal Time)
                                         </small>
                                     </div>
                                     <div class="col-md-4 form-group">
-                                        <label for="location-preset">Lieux prédéfinis</label>
+                                        <label for="location-preset">Predefined locations</label>
                                         <select id="location-preset">
-                                            <option value="">Choisir un lieu...</option>
+                                            <option value="">Choose location...</option>
                                             <option value="clermont">Clermont-Ferrand, France</option>
                                             <option value="paris">Paris, France</option>
                                             <option value="london">Londres, Royaume-Uni</option>
@@ -157,16 +157,16 @@
                         <div>
                             <div class="col-md-12 text-center">
                                 <button class="btn btn-access" onclick="calculatePositions()">
-                                    Calculer les positions
+                                    Evaluate positions
                                 </button>
                                 <button class="btn btn-swagger" onclick="setCurrentTime()">
-                                    Maintenant
+                                    Now
                                 </button>
                             </div>
                             
                             <div class="loading" id="loading">
                                 <div class="spinner"></div>
-                                <p>Calcul des positions astronomiques en cours...</p>
+                                <p>Calculating current astronomical positions...</p>
                             </div>
                             
                             <div class="error" id="error" style="display: none;"></div>
@@ -196,9 +196,9 @@
                                 const now = new Date();
                                 const localOffset = now.getTimezoneOffset(); // en minutes, NÉGATIF pour UTC+
                                 const utcOffset = -localOffset / 60; // Conversion en heures, signe inversé pour avoir la vraie zone
-                                
+                                                                
                                 // Tentative de détection du nom du fuseau horaire (navigateurs modernes)
-                                let timezoneName = 'Inconnu';
+                                let timezoneName = 'Unknow';
                                 try {
                                     timezoneName = Intl.DateTimeFormat().resolvedOptions().timeZone;
                                 } catch (e) {
@@ -213,7 +213,7 @@
                                 // Mise à jour de l'affichage
                                 const timezoneInfo = document.getElementById('timezone-info');
                                 timezoneInfo.innerHTML = `
-                                    Votre fuseau détecté: ${timezoneName} (UTC${utcOffset >= 0 ? '+' : ''}${utcOffset})<br>
+                                    Your detected timezone: ${timezoneName} (UTC${utcOffset >= 0 ? '+' : ''}${utcOffset})<br>
                                     <span style="font-size: 0.6rem;">Ex: ${utcTime} UTC + ${utcOffset}h = ${localTime} locale</span>
                                 `;
                                 
@@ -308,48 +308,48 @@
                                 infoPanel.innerHTML = `
                                         <div class="col-md-8 col-md-offset-2 col-sm-12">
                                             <div class="head_title text-center">
-                                                <h2>Informations de l'observation</h2>
-                                                <h5>Vos données recalculées</h5>
+                                                <h2>Observation information</h2>
+                                                <h5>Your recalculated data</h5>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <span class="info-label">Heure UTC (calculée) :</span>
+                                            <span class="info-label">Hour UTC (calculated):</span>
                                             <span>${timeInfo.calculated_for_utc}</span>
                                         </div>
                                         <div class="col-md-6">
-                                            <span class="info-label">Heure locale (affichage) :</span>
+                                            <span class="info-label">Local hour (display):</span>
                                             <span>${timeInfo.local_time_display}</span>
                                         </div>
                                         <div class="col-md-6">
-                                            <span class="info-label">Temps Sidéral Greenwich :</span>
+                                            <span class="info-label">Greenwich Sideral Time:</span>
                                             <span>${timeInfo.greenwich_sidereal_time} (${timeInfo.gst_decimal}h)</span>
                                         </div>
                                         <div class="col-md-6">
-                                            <span class="info-label">Temps Sidéral Local :</span>
+                                            <span class="info-label">Local Sideral Time:</span>
                                             <span>${timeInfo.local_sidereal_time} (${timeInfo.lst_decimal}h)</span>
                                         </div>
                                         <div class="col-md-6">
-                                            <span class="info-label">Date Julienne :</span>
+                                            <span class="info-label">Julienne Date:</span>
                                             <span>${timeInfo.julian_day}</span>
                                         </div>
                                         <div class="col-md-6">
-                                            <span class="info-label">Jour J2000.0 :</span>
+                                            <span class="info-label">Day J2000.0:</span>
                                             <span>${timeInfo.day_number_j2000}</span>
                                         </div>
                                         <div class="col-md-6">
-                                            <span class="info-label">Latitude :</span>
+                                            <span class="info-label">Latitude:</span>
                                             <span>${location.latitude.toFixed(6)}°</span>
                                         </div>
                                         <div class="col-md-6">
-                                            <span class="info-label">Longitude :</span>
+                                            <span class="info-label">Longitude:</span>
                                             <span>${location.longitude.toFixed(6)}°</span>
                                         </div>
                                         <div class="col-md-6">
-                                            <span class="info-label">Altitude :</span>
+                                            <span class="info-label">Altitude:</span>
                                             <span>${location.elevation} m</span>
                                         </div>
                                         <div class="col-md-6">
-                                            <span class="info-label">Zone horaire :</span>
+                                            <span class="info-label">Timezone:</span>
                                             <span>UTC${location.timezone >= 0 ? '+' : ''}${location.timezone}</span>
                                         </div>
                                 `;
@@ -359,7 +359,7 @@
                                 positionsGrid.innerHTML = `
                                     <div class="col-md-8 col-md-offset-2 col-sm-12">
                                         <div class="head_title text-center">
-                                            <h2>Position des astres</h2>
+                                            <h2>Position of objects</h2>
                                         </div>
                                     </div>
                                 `;
@@ -375,8 +375,8 @@
                                             <span class="celestial-name">${position.name}</span>
                                         </div>
                                         <div class="coordinates">
-                                            ${formatCoordinate(position.ra, 'Ascension Droite')}
-                                            ${formatCoordinate(position.dec, 'Déclinaison')}
+                                            ${formatCoordinate(position.ra, 'Right Ascension')}
+                                            ${formatCoordinate(position.dec, 'Declinaison')}
                                             ${formatCoordinate(position.az, 'Azimut')}
                                             ${formatCoordinate(position.alt, 'Altitude')}
                                         </div>
@@ -403,18 +403,18 @@
 
                                     // Validation des données
                                     if (isNaN(requestData.lat) || requestData.lat < -90 || requestData.lat > 90) {
-                                        throw new Error('Latitude invalide (doit être entre -90 et 90)');
+                                        throw new Error('Invalid Latitude (from -90 to 90)');
                                     }
                                     if (isNaN(requestData.lon) || requestData.lon < -180 || requestData.lon > 180) {
-                                        throw new Error('Longitude invalide (doit être entre -180 et 180)');
+                                        throw new Error('Invalid Longitud (from -180 to 180)');
                                     }
                                     if (!requestData.datetime) {
-                                        throw new Error('Date et heure requises');
+                                        throw new Error('Date & hour mandatory');
                                     }
                                     if (!requestData.elev) {
-                                        throw new Error('Altitude requises');
+                                        throw new Error('Altitude mandatory');
                                     }
-                                    const response = await fetch('proxy_api.php', {
+                                    const response = await fetch('https://api.le-systeme-solaire.net/proxy_api.php', {
                                         method: 'POST',
                                         headers: {
                                             'Content-Type': 'application/json',
@@ -423,7 +423,7 @@
                                     });
                                     
                                     if (!response.ok) {
-                                        throw new Error(`Erreur HTTP: ${response.status} ${response.statusText}`);
+                                        throw new Error(`Error HTTP: ${response.status} ${response.statusText}`);
                                     }
                                     
                                     const responseText = await response.text();
@@ -432,7 +432,7 @@
                                     try {
                                         data = JSON.parse(responseText);
                                     } catch (parseError) {
-                                        throw new Error('Réponse invalide du serveur: ' + responseText.substring(0, 100) + '...');
+                                        throw new Error('Invalid response from server: ' + responseText.substring(0, 100) + '...');
                                     }
                                     
                                     hideLoading();
@@ -440,7 +440,7 @@
                                     
                                 } catch (error) {
                                     hideLoading();
-                                    showError('Erreur: ' + error.message);
+                                    showError('Error: ' + error.message);
                                 }
                             }
                             
@@ -491,7 +491,7 @@
                             <nav class="navbar navbar-default bootsnav footer-menu no-background">
                                 <div class="container">  
                                     <div class="syssollink">
-                                        <p>Par le même auteur : <a href="https://www.le-systeme-solaire.net">Le Système solaire à portée de votre souris</a>.</p>
+                                        <p>By the same author: <a href="https://www.le-systeme-solaire.net">Le Système solaire à portée de votre souris</a>.</p>
                                     </div>
                                 </div>   
                             </nav>
@@ -500,7 +500,7 @@
                         <div class="col-md-12">
                             <div class="main_footer text-center p-top-40 p-bottom-30">
                                 <p class="wow fadeInRight" data-wow-duration="1s">
-                                    Fait avec <span class="text-danger">&#9829;</span> en <img src="/assets/images/auvergne.png" class="auvergne" alt="Auvergne"> par Christophe - Copyright &copy; 2019-<script>document.write(new Date().getFullYear());</script> Tous droits réservés
+                                    Made with <span class="text-danger">&#9829;</span> in <img src="../assets/images/auvergne.png" class="auvergne" alt="Auvergne"> by Christophe - Copyright &copy; 2019-<script>document.write(new Date().getFullYear());</script> All rights reserved.
                                 </p>
                             </div>
                         </div>
@@ -509,9 +509,9 @@
             </footer>
         </div>
 
-        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
-        <script src="assets/js/vendor/bootstrap.min.js"></script>
-        <script src="assets/js/jquery.easing.1.3.js"></script>
-        <script src="assets/js/main.js"></script>
+        <script src="../assets/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="../assets/js/vendor/bootstrap.min.js"></script>
+        <script src="../assets/js/jquery.easing.1.3.js"></script>
+        <script src="../assets/js/main.js"></script>
     </body>
 </html>
