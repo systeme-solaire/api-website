@@ -11,6 +11,7 @@ RewriteEngine On
 
 RewriteCond %{ENV:REDIRECT_STATUS} !403
 RedirectPermanent "/res" https://api.le-systeme-solaire.net/rest/
+RedirectPermanent "/register.html" https://api.le-systeme-solaire.net/generatekey.html
 
 #Redirection vers HTTPS avant les rewriterule php
 RewriteCond %{SERVER_PORT} 80
