@@ -23,33 +23,40 @@
         <meta property="twitter:image" content="https://api.le-systeme-solaire.net/assets/images/api.png" />
         <link rel="canonical" href="https://api.le-systeme-solaire.net/">
         <script type="application/ld+json">
-            {
-            "@context": "http://schema.org",
-            "@type": "WebPage",
-            "headline": "L'OpenData du Système Solaire",
-            "dateCreated": "2018-05-02",
-            "datePublished": "2025-09-04",
-            "dateModified": "2025-09-04",
-            "keywords": "OpenData, API",
-            "mainEntityOfPage": "https://api.le-systeme-solaire.net",
-            "url": "https://api.le-systeme-solaire.net",
-            "image": [
-                "https://api.le-systeme-solaire.net/assets/images/api.png"
-            ],
-            "author": {
-                "@type": "Organization",
-                "name": "Christophe"
-              },
-            "publisher": {
-                "@type": "Organization",
-                "name": "Christophe",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://api.le-systeme-solaire.net/assets/images/api.png"
-                  }
-              },
-            "description": "Une API Rest ouverte avec toutes les données du Système solaire"
+        {
+          "@context": "https://schema.org",
+          "@type": "Dataset",
+          "name": "L'OpenData du Système Solaire",
+          "headline": "L'OpenData du Système Solaire",
+          "image": "https://api.le-systeme-solaire.net/assets/images/api.png",
+          "author": {
+            "@type": "Organization",
+            "@id": "https://api.le-systeme-solaire.net/",
+            "name": "L'OpenData du Système Solaire",
+            "url": "https://api.le-systeme-solaire.net/",
+            "logo": {
+              "@type": "ImageObject",
+              "representativeOfPage": "False",
+              "url": "https://api.le-systeme-solaire.net/assets/images/api.png"
             }
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "L'OpenData du Système Solaire"
+          },
+          "distribution": {
+            "@type": "DataDownload",
+            "encodingFormat": "application/json",
+            "contentUrl": "https://api.le-systeme-solaire.net/rest/bodies/"
+          },
+          "dateCreated": "2018-05-02",
+          "datePublished": "2018-05-02",
+          "dateModified": "2025-11-02",
+          "keywords": "OpenData, API",
+          "mainEntityOfPage": "https://api.le-systeme-solaire.net",
+          "url": "https://api.le-systeme-solaire.net",
+          "description": "Une API Rest ouverte avec toutes les données du Système solaire"
+        }
         </script>
     </head>
 
